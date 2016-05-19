@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Js Geek</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript" src="quiz.js"></script>
+</head>
+<body>
+	<h3>The following questions are about a programming language computer so if you feel that you can resolve it then just go head..<h3>
+	
+	<div id="Ques1">	
+		<p id='q1'></p>					<!--the First question-->
+		<input type="radio" name="ch" value="cho1" checked>PHP<br> <!--the Choises-->
+		<input type="radio" name="ch" value="cho2">HTML<br>
+		<input type="radio" name="ch" value="cho3">XML<br>
+		<input type="radio" name="ch" value="cho4">JS<br>
+	</div>
+
+	<div id="Ques2" hidden>
+		<p id="q2"></p>	<!--the second question-->
+		<input type="radio" name="ch" value="2true">true<br>
+		<input type="radio" name="ch" value="2false">false<br>
+	</div>
+
+	<div id="Ques3" hidden>
+		<p id="q3"></p>	<!--the third question-->
+		<input type="radio" name="ch" value="3true">true<br>
+		<input type="radio" name="ch" value="3false">false<br>
+	</div>
+
+	<div id="Ques4" hidden>
+		<p id="q4"></p>	<!--the forth question-->
+		<input type="radio" name="ch" value="4true">true<br>
+		<input type="radio" name="ch" value="4false">false<br>
+	</div>
+
+	<div id="Ques5" hidden>
+		<p id="q5"></p>	<!--the fith question-->
+		<input type="radio" name="ch" value="5go">Go<br>
+		<input type="radio" name="ch" value="5sw">Swift<br>
+		<input type="radio" name="ch" value="5nod">Node<br>
+		<input type="radio" name="ch" value="5ja">Java<br>
+	</div>
+	<h2 id="done" hidden></h2>
+
+	<input type="button" id="next" value="Next" title="Go To The Next Question">
+	<input type="button" id="begin" value="Begin Again" title="Go To The Begining" hidden>
+
+</body>
+</html>

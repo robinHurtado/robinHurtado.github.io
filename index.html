@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js Geek-Login</title>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript" src="login/login.js"></script>	
+</head>
+<body>
+<p>Hi, please fill the below fields to have access to our Quiz</p>
+
+<form action="login/login.js" method="POST"><!--action attri defines the action to be performed when the form is submitted.-->
+	<fieldset> <!--The <fieldset> element groups related data in a form-->
+		<legend>Login Form-The fileds with (*) are require</legend>
+		<h3>Username*:</h3> <input type="text" id="unameID" name="username" >
+		<h3>Password*:</h3> <input type="password" id="accessID" name="access"><br><br>
+		<input type="button" id="submit" value="Submit" title="click submit to login">
+	</fieldset>
+</form>
+
+</body>
+</html>
