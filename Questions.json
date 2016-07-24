@@ -3,5 +3,11 @@
 	"question2": "2.The IE and Google Chrome browsers use J.S?",
 	"question3": "3.J.s is a Language based on EmacScript?",
 	"question4": "4.The IE browser created its own JS?",
-	"question5": "5.Which is the JS Language in the Backend side?"
+	"question5": "5.Which is the JS Language in the Backend side?",
+	"question6": "6.Promises are kind special objects?",
+	"question7": "7.What the let keyword is use for?",
+	"question8": "8.What are the special objects in Js?",
+	"question9": "9.What is an Iterable in Js?",
+	"question10": "10.What is a Genaretor function in Js?"
+
 }

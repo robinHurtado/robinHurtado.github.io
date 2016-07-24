@@ -2,7 +2,7 @@ $(function() {
 	
 	$.getJSON("Questions.json", function(data){    //jquery func to load a file with json format
 		val = data; 
-		for (i=1; i <= 5; i++) {
+		for (i=6; i <= 10; i++) {
 			document.getElementById('q'+i).innerHTML = val["question"+i];	//set the question1
 		};
 	}); 
@@ -15,34 +15,34 @@ $(function() {
 
 	//se ejecuta al darle clic en next
 	$("#next").click(function(){		
-		answer = $('input[name="ch'+name+'"]:checked').val();				//Jquery version
+		answer = $('input[name="ch'+name+'"]:checked').val();			//Jquery version
 		name++;
-		switch(answer){    											//the good choises-good Answers		
-			case 'cho4':
-				$("#Ques1").hide('slow');
-				$("#Ques2").show('slow',function(){
+		switch(answer){    								//the good choises-good Answers		
+			case '6true':
+				$("#Ques6").hide('slow');
+				$("#Ques7").show('slow',function(){
 					correct++
 				});
 				break;
-			case '2true':
-				$("#Ques3").show('slow',function(){
-					$("#Ques2").hide('slow');
+			case '7corr':
+				$("#Ques8").show('slow',function(){
+					$("#Ques7").hide('slow');
 					correct++
 				});
 				break;
-			case '3true':
-				$("#Ques4").show('slow',function(){
-					$("#Ques3").hide('slow');
+			case '8corr':
+				$("#Ques9").show('slow',function(){
+					$("#Ques8").hide('slow');
 					correct++
 				});
 				break;
-			case '4true':
-				$("#Ques5").show('slow',function(){
-					$("#Ques4").hide('slow');
+			case '9corr':
+				$("#Ques10").show('slow',function(){
+					$("#Ques9").hide('slow');
 					correct++
 				});
 				break;
-			case '5nod':
+			case '10corr':
 				correct++;
 				document.getElementById('done').innerHTML = 'Great,You have Done, You have: '+ correct +
 				 ' Correct Answer(s) and ' + wrong + ' Wrong Answer(s)';	
