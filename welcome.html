@@ -2,18 +2,88 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Welcome</title>
+	<title>Welcome to Js Quiz</title>
+	<!--favicon-->
+	<link rel="icon" href="resurces/jsfavicon.ico" type="image/x-icon">
+	
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<!-- bootstrap libraries-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
 	<script type="text/javascript">
 		 userName = sessionStorage.username;
 		$(document).ready(function() {
-			document.getElementById("wel").innerHTML = "!!Welcome "+userName+" Congratulation now you are in our web site lets look at what can you do here¡¡";	
+			if (userName === undefined ) userName='User' 
+			document.getElementById("wel").innerHTML="!!Welcome "+userName+", Congratulation now you are in our web site lets look at what can you do here¡¡";
+			//fire when hit the facebook button
+			$("#fb").click(function(){
+				window.location = "http://facebook.com";
+			})	
 		});
 		 
 	</script>
 </head>
 <body>
-<h1 id="wel"></h1>
-<p>To play a little challenge just click here and you can start challenge yourselft: <a href="quiz.html">J.S Quiz</a></p>
+	
+	<!-- header -->
+	<div class="navbar navbar-inverse navbar-stactic-top">
+      <div class="container">
+	        <div class="navbar-header">
+			  <a class="navbar-brand" href="#">Js Quiz</a>
+			</div>
+
+	        <div class="collapse navbar-collapse navHeaderCollapse">
+	           <ul class="nav navbar-nav navbar-right">
+	             <li class="active"><a href="extraPage.php">Contact Us</a></li>
+	             <li><a href="#" onclick="alert('Comming Soon')">Blog</a></li>
+	              <li><a href="#" onclick="alert('Comming Soon')">About Js Quiz</a></li>
+	    		</ul>          
+	        </div>
+        </div>
+    </div>
+    <div class="row">&nbsp;</div>
+    
+    <!-- body -->
+    <div class="container">
+    	<div class="jumbotron">
+    	 	<center>
+    	 		<h1 id="wel"></h1>
+				<p>let's do it just click on "J.S Quiz" below and you can start challenge yourselft</p>
+    		 	<a class="btn btn-default" href="quiz.html" role="button">J.S Quiz</a>
+	         	<button class="btn btn-info" data-toggle="modal" data-target="#infoWindow">Info</button>
+    		</center>
+    	</div>
+ 	</div>
+
+ 	<!-- Info Modal Dialog-->
+ 	<div id="infoWindow" class="modal fade" role="dialog">
+ 		<div class="modal-dialog">
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">Js Quiz</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>Hello, This quiz is to have a good opportunity to challenge yourself about a great and exciting programming language that is Javascript, invented By: Brendan Eich in 10 days in May 1995.<br>The evolution of Javascript is so hight that you can use Js on the serve side, you can control Robots, open up web sockets for always-on communication, get data on geographical location and device features such as accelerometer, and more.<br>It's a great time to learn Js. </p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+	  </div>
+ 	</div>
+
+ 	<!-- footer -->
+ 	<div class="navbar navbar-default navbar-fixed-bottom">
+    	<div class="container">
+     		<p class="navbar-text pull-left">Make it By: DRobin</p>
+       		<a href="http://youtube.com" class="navbar-btn btn-danger btn pull-right">Suscribe on Youtube</a>
+       		<!--<button type="button" class="navbar-btn btn-info btn pull-left-center">Info</button>-->
+       		<button type="button" id="fb" class="navbar-btn btn-primary btn pull-left-center">Facebook</button>
+    	</div>
+  	</div>
 </body>
 </html>
