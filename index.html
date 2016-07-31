@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Js Geek-Login</title>
+	<title>Js Quiz-Login</title>
 	<!--favicon-->
 	<link rel="icon" href="resurces/jsfavicon.ico" type="image/x-icon"> <!--could be with .png or .gif extension-->	
 	
@@ -28,9 +28,10 @@
 	        <div class="collapse navbar-collapse navHeaderCollapse">
 	           <ul class="nav navbar-nav navbar-right">
 	             <li class="active"><a href="extraPage.php">Contact Us</a></li>
-	             <li><a href="#" onclick="alert('Comming Soon')">Blog</a></li>
+	             <!--<li><a href="#" onclick="alert('Comming Soon')">Blog</a></li>-->
 	             <li><a href="#" onclick="alert('Comming Soon')">About Js Quiz</a></li>
-	    		</ul>          
+	    		</ul> 
+	    		<h3 class="text-muted">Js Quiz</h3>
 	        </div>
         </div>
     </div>
@@ -38,14 +39,17 @@
 	<!-- form body -->	
 	<center>
 	<!--<div><img src="resurces/jsIcon2.png" class="img-circle" width="235" height="103"></div>-->
-	<h3>Hi, please pick a Nick Name to have access to our Quiz</h3></center>
+	<h3 class="firstMsg">Hi, Please Pick a Nick Name To Have Access to Our Quiz</h3></center>
 	<div class="jumbotron boxlogin">		
 		<form><!--action attri defines the action to be performed when the form is submitted.-->
 			<fieldset> <!--The <fieldset> element groups related data in a form-->
-				<center><legend>Login</legend></center>
+				<center>
+				<legend class="brand">Js Quiz</legend>
 				
 				<div class="form-group">
-					<label>Nick name* :</label><input type="text"  maxlength="12" id="unameID" title="Must have at least 12 characteres" name="username" placeholder="nick.js">
+					<label>Nick name*:</label>
+					<input type="text"  class="form-control" maxlength="12" id="unameID" title="Must have at least 12 characteres" name="username" placeholder="Js Nick" required autofocus>
+
 					<div class="checkbox">
 						<label><input type="checkbox"> Remember me</label>
 					</div>
@@ -55,7 +59,8 @@
 				<!--<div class="form-group">
 					<label>Password*:</label> <input type="password" id="accessID" name="access"><br><br>
 				</div>-->				
-				<center><input type="button" id="submit" value="Submit" class="btn btn-info " title="click submit to login"></center>
+				<input type="button" id="submit" value="Submit" class="btn btn-lg btn-primary btn-block" title="click submit to login">
+				</center>
 			</fieldset>
 		</form>
 	</div>
@@ -63,7 +68,7 @@
 	<!-- footer -->
 	<div class="navbar navbar-default navbar-fixed-bottom">
 	     <div class="container">
-	      	<p class="navbar-text pull-left">Make It By: DRobin.</p>
+	      	<p class="navbar-text pull-left">&copy; 2016 Js Quiz. Make It By: DRobin.</p>
        		<a href="http://youtube.com" class="navbar-btn btn-danger btn pull-right">Suscribe on Youtube</a>
        		<!--<button type="button" class="navbar-btn btn-info btn pull-left-center">Info</button>-->
       	 	<button type="button" class="navbar-btn btn-primary btn pull-left-center">Facebook</button>
