@@ -7,6 +7,7 @@ $(function() {
 		};
 	}); 
 
+	$("#begin").hide();
 
 	//d = document.querySelector('input[name="ch"]:checked').value;	//It is the purest way to get the value of any input type
 	correct=0;
@@ -59,36 +60,33 @@ $(function() {
 				nextQuestion(answer);
 		}
 		
-		function nextQuestion(ans) {  				//wrong choises-bad Answers			
+		/* Function to handle the wrong Answers */
+		function nextQuestion(ans) {  							
 			switch(ans){
-				case 'cho1':
-				case 'cho2':
-				case 'cho3':
+				case '6false':
 					wrong++; 
-					$("#Ques1").hide('slow');
-					$("#Ques2").show('slow');
+					$("#Ques6").hide('slow');
+					$("#Ques7").show('slow');
 					break
-				case '2false':
-					$("#Ques3").show('slow',function(){
-						$("#Ques2").hide('slow');						
+				case '7Incorr':
+					$("#Ques8").show('slow',function(){
+						$("#Ques7").hide('slow');						
 						wrong++;										
 					});
 					break;
-				case '3false':
-					$("#Ques4").show('slow',function(){
-						$("#Ques3").hide('slow');						
+				case '8Incorr':
+					$("#Ques9").show('slow',function(){
+						$("#Ques8").hide('slow');						
 							wrong++;									
 					});
 					break;
-				case '4false':
-					$("#Ques5").show('slow',function(){
-						$("#Ques4").hide('slow');
+				case '9Incorr':
+					$("#Ques10").show('slow',function(){
+						$("#Ques9").hide('slow');
 							wrong++;									
 					});
 					break;
-				case '5go':
-				case '5sw':
-				case '5ja':
+				case '10Incorr':				
 					wrong++;
 					document.getElementById('done').innerHTML = 'Great,You have Done, You have: '+ correct 
 					+ ' Correct Answer(s) and ' + wrong + ' Wrong Answer(s).';			

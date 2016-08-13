@@ -1,13 +1,13 @@
 {
-	"question1": "1.What is the most Popular script Language?",
-	"question2": "2.The IE and Google Chrome browsers use J.S?",
-	"question3": "3.J.s is a Language based on EmacScript?",
+	"question1": "1.What is the most Popular script Language in the web?",
+	"question2": "2.Javascript was invented to support Java in the web?",
+	"question3": "3.Javascript is not a Language based on EmacScript?",
 	"question4": "4.The IE browser created its own JS?",
 	"question5": "5.Which is the JS Language in the Backend side?",
-	"question6": "6.Promises are kind special objects?",
-	"question7": "7.What the let keyword is use for?",
-	"question8": "8.What are the special objects in Js?",
-	"question9": "9.What is an Iterable in Js?",
-	"question10": "10.What is a Genaretor function in Js?"
+	"question6": "1.Promises are kind special objects?",
+	"question7": "2.What the 'let' keyword is use for?",
+	"question8": "3.What are the special objects in Js?",
+	"question9": "4.What is an Iterable in Js?",
+	"question10":"5.What is a Genaretor function in Js?"
 
 }

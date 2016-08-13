@@ -10,8 +10,13 @@
 	<!--bootstrap libraries-->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="pageStyle.css">
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<!--css -->
+	<link rel="stylesheet" type="text/css" href="pageStyle.css">
+
+	<!-- to make the page responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
 	<script type="text/javascript" src="quiz2.js"></script>
 </head>
@@ -21,13 +26,13 @@
     	<div class="container">
 	        <div class="collapse navbar-collapse navHeaderCollapse">
 	    		<ul class="nav navbar-nav navbar-right">
-	             <li class="active"><a href="extraPage.php">Contact Us</a></li>
+	             <!--<li class="active"><a href="extraPage.php">Contact Us</a></li>-->
 	             <li><a href="#" onclick="JavaScript:alert('Coming soon');">About Js Quiz</a></li>
 	             <li><a href="index.html">Logout</a></li>
 		   		</ul>
 
 		   		<ul class="nav nav-pills" role="tablist">
-					<li><a href="quiz.html">Js Quiz 1</a></li>
+					<li class="active"><a href="quiz.html">Js Quiz 1</a></li>
 					<li><a href="#">Js Quiz 3</a></li>
 					<li><a href="#">Js Quiz 4</a></li>
 				</ul>
@@ -46,7 +51,7 @@
 		<div id="Ques6">
 		<div class="jumbotron">	
 			<p id='q6'></p>					<!--the First question-->
-			<input type="radio" name="ch0" value="6flase" checked>False<br> <!--the Choises-->
+			<input type="radio" name="ch0" value="6false" checked>False<br> <!--the Choises-->
 			<input type="radio" name="ch0" value="6true">True<br>
 		</div>	
 		</div>
@@ -91,17 +96,16 @@
 		</div>
 	
 		<input type="button" class="btn btn-default" id="next" value="Next" title="Go To The Next Question">
-		<input type="button" id="begin" value="Begin Again" title="Go To The Begining" hidden>
+		<input type="button" class="btn btn-default" id="begin" value="Begin Again" title="Go To The Begining" hidden>
 		<h2 id="done" hidden></h2>
 	</center>
 
-	<!-- footer -->
+ 	<!-- footer -->
  	<div class="navbar navbar-default navbar-fixed-bottom">
      <div class="container">
-       <p class="navbar-text pull-left">Make It By: DRobin</p>
+       <p class="navbar-text pull-left">&copy; 2016 Js Quiz. Make It By: Robin Hurtado</p>
        <a href="http://youtube.com" class="navbar-btn btn-danger btn pull-right">Suscribe on Youtube</a>
-       <!--<button type="button" class="navbar-btn btn-info btn pull-left-center">Info</button>-->
-       <button type="button" class="navbar-btn btn-primary btn pull-left-center">Facebook</button>
+       <a href="https://www.facebook.com/robin.aven" class="navbar-btn btn-primary btn pull-left-center">Facebook</a>
       </div>
   	</div>
 </body>

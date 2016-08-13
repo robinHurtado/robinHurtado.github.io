@@ -7,18 +7,20 @@ $(function() {
 		};
 	}); 
 
+	$("#begin").hide();
 
-	//d = document.querySelector('input[name="ch"]:checked').value;	//It is the purest way to get the value of any input type
-	correct=0;
-	wrong= 0;
-	name=0;
+//d = document.querySelector('input[name="ch"]:checked').value;	//It is the purest way to get the value of any input type
 
-	//se ejecuta al darle clic en next
+	correct=0;	//counter of wrong answers
+	wrong= 0;	//counter of wrong answers
+	name=0; //variable to get the 'check' radio
+
+	//Execute when click on next button
 	$("#next").click(function(){		
 		answer = $('input[name="ch'+name+'"]:checked').val();				//Jquery version
 		name++;
-		switch(answer){    											//the good choises-good Answers		
-			case 'cho4':
+		switch(answer){    				//the Good Answers		
+			case '1corr':
 				$("#Ques1").hide('slow');
 				$("#Ques2").show('slow',function(){
 					correct++
@@ -30,7 +32,7 @@ $(function() {
 					correct++
 				});
 				break;
-			case '3true':
+			case '3corr':
 				$("#Ques4").show('slow',function(){
 					$("#Ques3").hide('slow');
 					correct++
@@ -58,12 +60,10 @@ $(function() {
 				//document.getElementById('done').innerHTML = 'Sorry Bad Choise :(';				
 				nextQuestion(answer);
 		}
-		
-		function nextQuestion(ans) {  				//wrong choises-bad Answers			
+		/* Function to handle the wrong Answers	*/
+		function nextQuestion(ans) {  						
 			switch(ans){
-				case 'cho1':
-				case 'cho2':
-				case 'cho3':
+				case '1incorr':
 					wrong++; 
 					$("#Ques1").hide('slow');
 					$("#Ques2").show('slow');
@@ -74,7 +74,7 @@ $(function() {
 						wrong++;										
 					});
 					break;
-				case '3false':
+				case '3incorr':
 					$("#Ques4").show('slow',function(){
 						$("#Ques3").hide('slow');						
 							wrong++;									
@@ -86,9 +86,9 @@ $(function() {
 							wrong++;									
 					});
 					break;
-				case '5go':
-				case '5sw':
-				case '5ja':
+				case '5incorr':
+				case '5incorr':
+				case '5incorr':
 					wrong++;
 					document.getElementById('done').innerHTML = 'Great,You have Done, You have: '+ correct 
 					+ ' Correct Answer(s) and ' + wrong + ' Wrong Answer(s).';			
