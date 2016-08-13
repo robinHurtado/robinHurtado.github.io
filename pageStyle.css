@@ -1,6 +1,6 @@
 html{
 	margin: 0;
-	padding: 25;
+	padding: 0;
 	-webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
@@ -30,6 +30,10 @@ input[type="submit"]{
 .brand{
 	font-size: 26px;
 	font-family: sans-serif;
+}
+
+.footer{
+	background-color: #f5f5f5;
 }
 
 .error{color: #FF0000;}
