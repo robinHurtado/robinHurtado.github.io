@@ -44,7 +44,7 @@ $(function() {
 					correct++
 				});
 				break;
-			case '5nod':
+			case '5corr':
 				correct++;
 				document.getElementById('done').innerHTML = 'Great,You have Done, You have: '+ correct +
 				 ' Correct Answer(s) and ' + wrong + ' Wrong Answer(s)';	
