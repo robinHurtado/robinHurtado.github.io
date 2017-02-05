@@ -20,8 +20,9 @@
 		 userName = sessionStorage.username;
 		$(document).ready(function() {
 			if (userName === undefined ) userName='User' 
-			document.getElementById("wel").innerHTML="!!Welcome "+userName+", Congratulation now you are in our web site lets look at what can you do here¡¡";
-			//fire when hit the facebook button
+			document.getElementById("wel").innerHTML="!!Welcome "+userName+
+		", Congratulation now you are in our web site lets look at what can you do here¡¡";
+			//fires when hit the facebook button
 			$("#fb").click(function(){
 				window.location = "http://facebook.com";
 			})	
@@ -78,12 +79,12 @@
  	</div>
 
  	<!-- footer -->
- 	<div class="navbar navbar-default navbar-fixed-bottom">
+ 	<footer>
      <div class="container">
        <p class="navbar-text pull-left">&copy; 2016 Js Quiz. Make It By: Robin Hurtado</p>
        <a href="http://youtube.com" class="navbar-btn btn-danger btn pull-right">Suscribe on Youtube</a>
        <a href="https://www.facebook.com/robin.aven" class="navbar-btn btn-primary btn pull-left-center">Facebook</a>
       </div>
-  	</div>
+  	</footer>
 </body>
 </html>
