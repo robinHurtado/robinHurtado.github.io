@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -102,4 +103,110 @@
       </div>
 	</footer>
 </body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Js Quiz Level 1</title>
+	<!--favicon-->
+	<link rel="icon" href="resurces/jsfavicon.ico" type="image/x-icon">
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>	
+	<!--bootstrap libraries-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<!-- to make the page responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+	<script type="text/javascript" src="quiz.js"></script>
+</head>
+<body>
+	<!-- Header-->
+	<div class="navbar navbar-inverse navbar-stactic-top">
+    	<div class="container">
+
+	        <div class="collapse navbar-collapse navHeaderCollapse">
+	    		<ul class="nav navbar-nav navbar-right">
+	             <!--<li class="active"><a href="extraPage.php">Contact Us</a></li>-->
+	             <li><a href="#" onclick="JavaScript:alert('Coming soon');">About Js Quiz</a></li>
+	             <li><a href="index.html">Logout</a></li>
+		   		</ul>
+
+		   		       
+	        </div>
+        </div>
+    </div>
+
+    <div class="container">    
+	    <div class="row">&nbsp;</div>
+	    <!-- body -->
+		<h3>The following questions are about a programming language computer called JavaScript so if you feel that you can resolve them then just go ahead..<h3>
+		
+	</div>
+
+	<center>
+		<div id="Ques1">
+		<div class="jumbotron">	
+			<p id='q1'></p>					<!--the First question-->
+			<input type="radio" name="ch0" value="1incorr" checked>PHP<br> <!--the Choises-->
+			<input type="radio" name="ch0" value="1incorr">HTML<br>
+			<input type="radio" name="ch0" value="1incorr">XML<br>
+			<input type="radio" name="ch0" value="1corr">JS<br>
+		</div>	
+		</div>
+	
+		<div id="Ques2" hidden>
+		<div class="jumbotron">
+			<p id="q2"></p>	<!--the second question-->
+			<input type="radio" name="ch1" value="2true" checked>True<br>
+			<input type="radio" name="ch1" value="2false">False<br>
+		</div>	
+		</div>
+
+		<div id="Ques3" hidden>
+		<div class="jumbotron">
+			<p id="q3"></p>	<!--the third question-->
+			<input type="radio" name="ch2" value="3incorr" checked>True<br>
+			<input type="radio" name="ch2" value="3corr">False<br>
+		</div>	
+		</div>
+
+		<div id="Ques4" hidden>
+			<div class="jumbotron">
+				<p id="q4"></p>	<!--the forth question-->
+				<input type="radio" name="ch3" value="4true" checked>True<br>
+				<input type="radio" name="ch3" value="4false">False<br>
+			</div>	
+		</div>
+
+		<div id="Ques5" hidden>
+			<div class="jumbotron">
+				<p id="q5"></p>	<!--the fith question-->
+				<input type="radio" name="ch4" value="5incorr" checked>Go<br>
+				<input type="radio" name="ch4" value="5incorr">Swift<br>
+				<input type="radio" name="ch4" value="5corr">Node<br>
+				<input type="radio" name="ch4" value="5incorr">Java<br>
+			</div>	
+		</div>
+	
+		<input type="button" class="btn btn-default" id="next" value="Next" title="Go To The Next Question">
+		<input type="button" class="btn btn-default" id="begin" value="Begin Again" title="Go To The Begining" hidden>
+		<a href="quiz2.html">Js Quiz 2</a>
+		<h2 id="done" hidden></h2>
+	</center>
+
+	<!-- footer -->
+	<footer>
+     <div class="container">
+      	<p class="navbar-text pull-left">&copy; <em id="currYear"></em> Js Quiz. Make It By: Robin Hurtado</p>
+   		<a href="http://youtube.com" class="navbar-btn btn-danger btn pull-right">Suscribe on Youtube</a>
+  	 	<a href="https://www.facebook.com/robin.aven" style="float:left;" class="navbar-btn btn-primary btn pull-left-center">Facebook</a>
+      </div>
+	</footer>
+</body>
+>>>>>>> 25274203bf80e28b225917c367688e555754e325
 </html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html{
 	margin: 0;
 	padding: 0;
@@ -32,4 +33,44 @@ input[type="submit"]{
 	font-family: sans-serif;
 }
 
+=======
+html{
+	margin: 0;
+	padding: 0;
+	-webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+.boxlogin{
+	border-radius: 4px; /*bordes redondeados*/
+	margin: 100px auto;
+	width: 380px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	font-size: 19px;
+}
+
+/*.boxlogin input[type="text"]{
+	width: 250px;
+}*/
+
+input[type="submit"]{
+	margin-top: 16px;
+}
+
+.firstMsg{
+	font-size: 26px;
+	font-family: sans-serif;
+}
+
+.brand{
+	font-size: 26px;
+	font-family: sans-serif;
+}
+
+.footer{
+	background-color: #f5f5f5;
+}
+
+>>>>>>> 25274203bf80e28b225917c367688e555754e325
 .error{color: #FF0000;}
