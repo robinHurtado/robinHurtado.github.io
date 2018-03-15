@@ -1,77 +1,72 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>Js Quiz-Login</title>
-	<!--favicon-->
-	<link rel="icon" href="resurces/jsfavicon.ico" type="image/x-icon"> <!--could be with
-	.png or .gif extension-->
-
-	<!-- css libraries-->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="pageStyle.css">
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-	<!-- jquery libraries-->
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<!-- to make the page responsive -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--js code-->
-	<script type="text/javascript" src="login/login.js"></script>
-
-</head>
-<body>
-	<!-- header body -->
-	<div class="navbar navbar-inverse navbar-stactic-top">
+	<head>
+		<meta charset="UTF-8">
+		<title>Js Quiz-Login</title>
+		<!--favicon-->
+		<link rel="icon" href="resurces/jsfavicon.ico" type="image/x-icon">
+		<!-- css libraries-->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="pageStyle.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<!-- jquery libraries-->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<!-- to make the page responsive -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--js code-->
+		<script type="text/javascript" src="login/login.js"></script>
+	</head>
+	<body>
+		<!-- header body -->
+		<div class="navbar navbar-inverse navbar-stactic-top">
       <div class="container">
-	        <!--<a href='#' class="navbar-brand">Home</a>
-        	<a href='#' onclick="alert('Comming Soon')" class="navbar-brand">Topics</a>-->
-	        <div class="collapse navbar-collapse navHeaderCollapse">
-	           <ul class="nav navbar-nav navbar-right">
-	             <!--<li class="active"><a href="extraPage.php">Contact Us</a></li>
-	             <li><a href="#" onclick="alert('Comming Soon')">Blog</a></li>-->
-	             <li><a href="#" onclick="alert('Comming Soon')">About Js Quiz</a></li>
+	      <div class="collapse navbar-collapse navHeaderCollapse">
+	        <ul class="nav navbar-nav navbar-right">
+	          <!--<li class="active"><a href="extraPage.php">Contact Us</a></li>
+	          <li><a href="#" onclick="alert('Comming Soon')">Blog</a></li>-->
+	          <li><a href="#" onclick="alert('Comming Soon')">About Js Quiz</a></li>
 	    		</ul>
 	    		<h3 class="text-muted">Js Quiz</h3>
-	        </div>
-        </div>
-    </div>
-
-	<!-- form body -->
-	<center>
-	<!--<div><img src="resurces/jsIcon2.png" class="img-circle" width="235" height="103"></div>-->
-	<em class="firstMsg">Hello, it is great having you here, Please Pick a Nick Name To Have Access to Our Quiz</em></center>
-	<div class="jumbotron boxlogin">
-		<form onsubmit="return false"><!--action attri defines the action to be performed when the form is submitted.-->
-			<!--<fieldset>--> <!--The <fieldset> element groups related data in a form-->
-				<center>
-				<legend class="brand">Js Quiz</legend>
-
-				<div class="form-group">
-					<label>Nick name*:</label>
-					<input type="text"  class="form-control" maxlength="12" id="unameID" title="Must have at least 12 characteres" name="username" placeholder="Js Nick" required autofocus>
-
-					<div class="checkbox">
-						<label><input type="checkbox"> Remember me</label>
-					</div>
-				</div>
-
-				<label id="validate"></label>
-				<!--<div class="form-group">
-					<label>Password*:</label> <input type="password" id="accessID" name="access"><br><br>
-				</div>-->
-				<input type="button" id="submit" value="Submit" class="btn btn-lg btn-primary btn-block" title="click submit to login">
-				</center>
-			<!--</fieldset>-->
-		</form>
-	</div>
-
-	<!-- footer -->
-	<footer>
-     <div class="container">
-      	<p class="navbar-text pull-left">&copy; <em id="currYear"></em> Js Quiz. Make It By: Robin Hurtado</p>
-   		<a href="http://youtube.com" class="navbar-btn btn-danger btn pull-right">Suscribe on Youtube</a>
-  	 	<a href="https://www.facebook.com/robin.aven" style="float:left;" class="navbar-btn btn-primary btn pull-left-center">Facebook</a>
+	      </div>
       </div>
-	</footer>
-</body>
+    </div>
+		<!-- form body -->
+		<center>
+		  <em class="firstMsg">
+        Hello, it is great having you here <br> Please pick a nickname to have access to the Quiz
+      </em>
+    </center>
+		<div class="jumbotron boxlogin">
+			<form onsubmit="return false"><!--action attri defines the action to be performed when the form is submitted.-->
+				<!--<fieldset>--> <!--The <fieldset> element groups related data in a form-->
+					<center>
+					<legend class="brand">Js Quiz</legend>
+
+					<div class="form-group">
+						<label>Nick name*:</label>
+						<input type="text"  class="form-control" maxlength="12" id="unameID" title="Must have at least 12 characteres" name="username" placeholder="Js Nick" required autofocus>
+
+						<div class="checkbox">
+							<label><input type="checkbox"> Remember me</label>
+						</div>
+					</div>
+
+					<label id="validate"></label>
+					<!--<div class="form-group">
+						<label>Password*:</label> <input type="password" id="accessID" name="access"><br><br>
+					</div>-->
+					<input type="button" id="submit" value="Submit" class="btn btn-lg btn-primary btn-block" title="click submit to login">
+					</center>
+				<!--</fieldset>-->
+			</form>
+		</div>
+		<!-- footer -->
+		<footer>
+	     <div class="container">
+	      	<p class="navbar-text pull-left">&copy; <em id="currYear"></em> Js Quiz. Make It By: Robin Hurtado</p>
+	   		<a href="http://youtube.com" class="navbar-btn btn-danger btn pull-right">Suscribe on Youtube</a>
+	  	 	<a href="https://www.facebook.com/robin.aven" style="float:left;" class="navbar-btn btn-primary btn pull-left-center">Facebook</a>
+	      </div>
+		</footer>
+	</body>
 </html>

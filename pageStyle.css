@@ -2,7 +2,7 @@ html{
 	margin: 0;
 	padding: 0;
 	-webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 .boxlogin{
@@ -13,10 +13,6 @@ html{
 	-moz-border-radius: 4px;
 	font-size: 19px;
 }
-
-/*.boxlogin input[type="text"]{
-	width: 250px;
-}*/
 
 input[type="submit"]{
 	margin-top: 16px;
@@ -36,3 +32,7 @@ input[type="submit"]{
 	background-color: #f5f5f5;
 }
 .error{color: #FF0000;}
+
+.navbar {
+	border-radius: 0;
+}
