@@ -21,7 +21,7 @@ $(function () {
 		sessionStorage.username = unameID;
 		//sessionStorage.access  	= accessID;
 
-		window.location = "welcome.html";
+		window.location = "html/welcome.html";
 
 	});
 });

@@ -1,49 +1,50 @@
 $(function() {
 
-	$.getJSON("Questions.json", function(data){    //jquery func to load a file with json format
+	$.getJSON("../js/Questions.json", function(data){    //jquery func to load a file with json format
 		val = data;
-		for (i=6; i <= 10; i++) {
+		for (i=1; i <= 5; i++) {
 			document.getElementById('q'+i).innerHTML = val["question"+i];	//set the question1
 		};
 	});
 
 	$("#begin").hide();
 
-	//d = document.querySelector('input[name="ch"]:checked').value;	//It is the purest way to get the value of any input type
-	correct=0;
-	wrong= 0;
-	name=0;
+//d = document.querySelector('input[name="ch"]:checked').value;	//It is the purest way to get the value of any input type
 
-	//se ejecuta al darle clic en next
+	correct=0;	//counter of wrong answers
+	wrong= 0;	//counter of wrong answers
+	name=0; //variable to get the 'check' radio
+
+	//Execute when click on next button
 	$("#next").click(function(){
-		answer = $('input[name="ch'+name+'"]:checked').val();			//Jquery version
+		answer = $('input[name="ch'+name+'"]:checked').val();				//Jquery version
 		name++;
-		switch(answer){    								//the good choises-good Answers
-			case '6true':
-				$("#Ques6").hide('slow');
-				$("#Ques7").show('slow',function(){
+		switch(answer){    				//the Good Answers
+			case '1corr':
+				$("#Ques1").hide('slow');
+				$("#Ques2").show('slow',function(){
 					correct++
 				});
 				break;
-			case '7corr':
-				$("#Ques8").show('slow',function(){
-					$("#Ques7").hide('slow');
+			case '2true':
+				$("#Ques3").show('slow',function(){
+					$("#Ques2").hide('slow');
 					correct++
 				});
 				break;
-			case '8corr':
-				$("#Ques9").show('slow',function(){
-					$("#Ques8").hide('slow');
+			case '3corr':
+				$("#Ques4").show('slow',function(){
+					$("#Ques3").hide('slow');
 					correct++
 				});
 				break;
-			case '9corr':
-				$("#Ques10").show('slow',function(){
-					$("#Ques9").hide('slow');
+			case '4true':
+				$("#Ques5").show('slow',function(){
+					$("#Ques4").hide('slow');
 					correct++
 				});
 				break;
-			case '10corr':
+			case '5corr':
 				correct++;
 				document.getElementById('done').innerHTML = 'Great,You have Done, You have: '+ correct +
 				 ' Correct Answer(s) and ' + wrong + ' Wrong Answer(s)';
@@ -59,34 +60,35 @@ $(function() {
 				//document.getElementById('done').innerHTML = 'Sorry Bad Choise :(';
 				nextQuestion(answer);
 		}
-
-		/* Function to handle the wrong Answers */
+		/* Function to handle the wrong Answers	*/
 		function nextQuestion(ans) {
 			switch(ans){
-				case '6false':
+				case '1incorr':
 					wrong++;
-					$("#Ques6").hide('slow');
-					$("#Ques7").show('slow');
+					$("#Ques1").hide('slow');
+					$("#Ques2").show('slow');
 					break
-				case '7Incorr':
-					$("#Ques8").show('slow',function(){
-						$("#Ques7").hide('slow');
+				case '2false':
+					$("#Ques3").show('slow',function(){
+						$("#Ques2").hide('slow');
 						wrong++;
 					});
 					break;
-				case '8Incorr':
-					$("#Ques9").show('slow',function(){
-						$("#Ques8").hide('slow');
+				case '3incorr':
+					$("#Ques4").show('slow',function(){
+						$("#Ques3").hide('slow');
 							wrong++;
 					});
 					break;
-				case '9Incorr':
-					$("#Ques10").show('slow',function(){
-						$("#Ques9").hide('slow');
+				case '4false':
+					$("#Ques5").show('slow',function(){
+						$("#Ques4").hide('slow');
 							wrong++;
 					});
 					break;
-				case '10Incorr':
+				case '5incorr':
+				case '5incorr':
+				case '5incorr':
 					wrong++;
 					document.getElementById('done').innerHTML = 'Great,You have Done, You have: '+ correct
 					+ ' Correct Answer(s) and ' + wrong + ' Wrong Answer(s).';
