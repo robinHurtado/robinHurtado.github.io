@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<title>Js Quiz-Login</title>
@@ -11,23 +11,16 @@
 		<!-- jquery libraries-->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-		<!-- to make the page responsive -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- sets the width of the page to follow the screen-width of the device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!--js code-->
 		<script type="text/javascript" src="js/login.js"></script>
 	</head>
 	<body>
 		<!-- header body -->
 		<div class="navbar navbar-inverse navbar-stactic-top">
-      <div class="container">
-	      <div class="collapse navbar-collapse navHeaderCollapse">
-	        <ul class="nav navbar-nav navbar-right">
-	          <!--<li class="active"><a href="extraPage.php">Contact Us</a></li>
-	          <li><a href="#" onclick="alert('Comming Soon')">Blog</a></li>-->
-	          <li><a href="#" onclick="alert('Comming Soon')">About Js Quiz</a></li>
-	    		</ul>
-	    		<h3 class="text-muted">Js Quiz</h3>
-	      </div>
+      <div class="collapse navbar-collapse navHeaderCollapse">
+    		<center><h3 class="text-muted">Js Quiz</h3></center>
       </div>
     </div>
 		<!-- form body -->
@@ -54,6 +47,23 @@
 				</center>
 			</form>
 		</div>
+    <aside>
+      <h3>Who am i?</h3>
+      <img src="imgs/IMG_20150526_200415.jpg" alt="Robin Foto" style="width:200px;height:200px">
+      <p>My name is Robin Hurtado Abadia, I am a software developer, currently living in Medellín, i was born in this city <br> but i grew up in the pacifict coast, my passions involve: Programming, learning languages, travel, reading literature and nutrition.</p>
+      <div id="map" style="width:400px;height:400px">Medellín city</div>
+      <script type="text/javascript">
+        function medMap() {
+          var mapOptions = {
+              center: new google.maps.LatLng(6.2580985, -75.6039451),
+              zoom: 10,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+          }
+          var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCp0DpcWQ4NJKHA7nATpXAyZIRQKWfkUIs&callback=medMap"></script>
+    </aside>
 		<footer> <!-- footer -->
       <div class="container">
         <p class="navbar-text pull-left">&copy; <em id="currYear"></em> Js Quiz. Make It By: Robin Hurtado</p>
