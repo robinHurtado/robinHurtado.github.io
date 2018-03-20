@@ -36,3 +36,28 @@ input[type="submit"]{
 .navbar {
 	border-radius: 0;
 }
+
+.who {
+	background-color: #eeeeee;
+  padding: 12px;
+  color: #0b7de0;
+  text-align: center;
+}
+
+.profile {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-left: 12%;
+}
+
+.bio {
+	float: left;
+  margin: 4%;
+}
+
+.map {
+	width: 300px;
+	height: 300px;
+	align-content: center;
+}
