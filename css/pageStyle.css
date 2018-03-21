@@ -59,5 +59,6 @@ input[type="submit"]{
 .map {
 	width: 300px;
 	height: 300px;
-	align-content: center;
+	margin-top: 17%;
+  margin-left: 12%;
 }
