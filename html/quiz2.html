@@ -1,109 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Js Quiz Level 2</title>
-	<!--favicon-->
-	<link rel="icon" href="../resurces/jsfavicon.ico" type="image/x-icon">
-	<!-- jQuery google Dns-->
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<!--bootstrap libraries-->
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<!--css -->
-	<link rel="stylesheet" type="text/css" href="../css/pageStyle.css">
-	<!-- sets the width of the page to follow the screen-width of the device -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--js code-->
-	<script type="text/javascript" src="../js/quiz2.js"></script>
+  <meta charset="UTF-8">
+  <title>Js Quiz Level 2</title>
+  <!--favicon-->
+  <link rel="icon" href="../resurces/jsfavicon.ico" type="image/x-icon">
+  <!-- jQuery google Dns-->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <!--bootstrap libraries-->
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!--css -->
+  <link rel="stylesheet" type="text/css" href="../css/pageStyle.css">
+  <!-- sets the width of the page to follow the screen-width of the device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--js code-->
+  <script type="text/javascript" src="../js/quiz2.js"></script>
 </head>
 <body>
-	<!-- Header-->
-	<div class="navbar navbar-inverse navbar-stactic-top">
-    	<div class="container">
-	        <div class="collapse navbar-collapse navHeaderCollapse">
-	    		<ul class="nav navbar-nav navbar-right">
-	             <!--<li class="active"><a href="extraPage.php">Contact Us</a></li>-->
-	             <li><a href="#" onclick="JavaScript:alert('Coming soon');">About Js Quiz</a></li>
-	             <li><a href="../index.html">Logout</a></li>
-		   		</ul>
+  <!-- Header-->
+  <div class="navbar navbar-inverse navbar-stactic-top">
+    <div class="container">
+      <div class="collapse navbar-collapse navHeaderCollapse">
+        <ul class="nav navbar-nav navbar-right">
+          <!--<li class="active"><a href="extraPage.php">Contact Us</a></li>-->
+          <li><a href="#" onclick="JavaScript:alert('Coming soon');">About Js Quiz</a></li>
+          <li><a href="../index.html">Logout</a></li>
+        </ul>
+        <ul class="nav nav-pills" role="tablist">
+          <li class="active"><a href="quiz.html">Js Quiz 1</a></li>
+          <li><a href="#">Js Quiz 3</a></li>
+          <li><a href="#">Js Quiz 4</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-		   		<ul class="nav nav-pills" role="tablist">
-					<li class="active"><a href="quiz.html">Js Quiz 1</a></li>
-					<li><a href="#">Js Quiz 3</a></li>
-					<li><a href="#">Js Quiz 4</a></li>
-				</ul>
-	        </div>
-        </div>
+  <div class="container">
+    <div class="row">&nbsp;</div>
+    <h3>The following questions are about a programming language computer called JavaScript so if you feel that you can resolve it then just go ahead..<h3>
+  </div>
+
+  <center>
+    <div id="Ques6">
+    <div class="jumbotron">
+      <p id='q6'></p>         <!--the First question-->
+      <input type="radio" name="ch0" value="6false" checked>False<br> <!--the Choises-->
+      <input type="radio" name="ch0" value="6true">True<br>
+    </div>
     </div>
 
-    <div class="container">
-	    <div class="row">&nbsp;</div>
-	    <!-- body -->
-		<h3>The following questions are about a programming language computer called JavaScript so if you feel that you can resolve it then just go ahead..<h3>
-
-	</div>
-
-	<center>
-		<div id="Ques6">
-		<div class="jumbotron">
-			<p id='q6'></p>					<!--the First question-->
-			<input type="radio" name="ch0" value="6false" checked>False<br> <!--the Choises-->
-			<input type="radio" name="ch0" value="6true">True<br>
-		</div>
-		</div>
-
-		<div id="Ques7" hidden>
-		<div class="jumbotron">
-			<p id="q7"></p>	<!--the second question-->
-			<input type="radio" name="ch1" value="7Incorr" checked>It is use to return values<br>
-			<input type="radio" name="ch1" value="7Incorr">It is use to let a varible keep multiple data type.<br>
-			<input type="radio" name="ch1" value="7corr">It is use to declare a varible only for a block scope.<br>
-			<input type="radio" name="ch1" value="7Incorr">It is a keyword to avoid hoisting behavior.<br>
-		</div>
-		</div>
-
-		<div id="Ques8" hidden>
-		<div class="jumbotron">
-			<p id="q8"></p>	<!--the third question-->
-			<input type="radio" name="ch2" value="8Incorr" checked>Strings,Number,Date<br>
-			<input type="radio" name="ch2" value="8Incorr">Array,Functions,Strings<br>
-			<input type="radio" name="ch2" value="8Incorr">Promises,Functions,Date<br>
-			<input type="radio" name="ch2" value="8corr">Array,Functions,Objects<br>
-		</div>
-		</div>
-
-		<div id="Ques9" hidden>
-			<div class="jumbotron">
-				<p id="q9"></p>	<!--the forth question-->
-				<input type="radio" name="ch3" value="9Incorr" checked>It is an object to collect data<br>
-				<input type="radio" name="ch3" value="9Incorr">Object that returns iterators<br>
-				<input type="radio" name="ch3" value="9corr">Allows to Iterate Objects in Js<br>
-			</div>
-		</div>
-
-		<div id="Ques10" hidden>
-			<div class="jumbotron">
-				<p id="q10"></p>	<!--the fith question-->
-				<input type="radio" name="ch4" value="10Incorr" checked>It is a function to Generate mores functions.<br>
-				<input type="radio" name="ch4" value="10corr">Function that Returns multiples values.<br>
-				<input type="radio" name="ch4" value="10Incorr">Function that allows blocking code.<br>
-				<input type="radio" name="ch4" value="10Incorr">Function to make block and wait code.<br>
-			</div>
-		</div>
-
-		<input type="button" class="btn btn-default" id="next" value="Next" title="Go To The Next Question">
-		<input type="button" class="btn btn-default" id="begin" value="Begin Again" title="Go To The Begining" hidden>
-		<h2 id="done" hidden></h2>
-	</center>
-
- 	<!-- footer -->
-	<footer>
-     <div class="container">
-      	<p class="navbar-text pull-left">&copy; <em id="currYear"></em> Js Quiz. Make It By: Robin Hurtado</p>
-   		<a href="http://youtube.com" class="navbar-btn btn-danger btn pull-right">Suscribe on Youtube</a>
-  	 	<a href="https://www.facebook.com/robin.aven" style="float:left;" class="navbar-btn btn-primary btn pull-left-center">Facebook</a>
+    <div id="Ques7" hidden>
+      <div class="jumbotron">
+        <p id="q7"></p> <!--the second question-->
+        <input type="radio" name="ch1" value="7Incorr" checked>It is use to return values<br>
+        <input type="radio" name="ch1" value="7Incorr">It is use to let a varible keep multiple data type.<br>
+        <input type="radio" name="ch1" value="7corr">It is use to declare a varible only for a block scope.<br>
+        <input type="radio" name="ch1" value="7Incorr">It is a keyword to avoid hoisting behavior.<br>
       </div>
-	</footer>
+    </div>
+
+    <div id="Ques8" hidden>
+      <div class="jumbotron">
+        <p id="q8"></p> <!--the third question-->
+        <input type="radio" name="ch2" value="8Incorr" checked>Strings,Number,Date<br>
+        <input type="radio" name="ch2" value="8Incorr">Array,Functions,Strings<br>
+        <input type="radio" name="ch2" value="8Incorr">Promises,Functions,Date<br>
+        <input type="radio" name="ch2" value="8corr">Array,Functions,Objects<br>
+      </div>
+    </div>
+
+    <div id="Ques9" hidden>
+      <div class="jumbotron">
+        <p id="q9"></p> <!--the forth question-->
+        <input type="radio" name="ch3" value="9Incorr" checked>It is an object to collect data<br>
+        <input type="radio" name="ch3" value="9Incorr">Object that returns iterators<br>
+        <input type="radio" name="ch3" value="9corr">Allows to Iterate Objects in Js<br>
+      </div>
+    </div>
+
+    <div id="Ques10" hidden>
+      <div class="jumbotron">
+        <p id="q10"></p>  <!--the fith question-->
+        <input type="radio" name="ch4" value="10Incorr" checked>It is a function to Generate mores functions.<br>
+        <input type="radio" name="ch4" value="10corr">Function that Returns multiples values.<br>
+        <input type="radio" name="ch4" value="10Incorr">Function that allows blocking code.<br>
+        <input type="radio" name="ch4" value="10Incorr">Function to make block and wait code.<br>
+      </div>
+    </div>
+    <input type="button" class="btn btn-default" id="next" value="Next" title="Go To The Next Question">
+    <input type="button" class="btn btn-default" id="begin" value="Begin Again" title="Go To The Begining" hidden>
+    <h2 id="done" hidden></h2>
+  </center>
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <p class="navbar-text pull-left">&copy; <em id="currYear"></em> Js Quiz. Make It By: Robin Hurtado</p>
+      <a href="http://youtube.com" class="navbar-btn btn-danger btn pull-right">Suscribe on Youtube</a>
+      <a href="https://www.facebook.com/robin.aven" style="float:left;" class="navbar-btn btn-primary btn pull-left-center">Facebook</a>
+    </div>
+  </footer>
 </body>
 </html>

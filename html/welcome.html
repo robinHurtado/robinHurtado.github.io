@@ -18,17 +18,12 @@
 		 userName = sessionStorage.username;
 		$(document).ready(function() {
 			if (userName === undefined ) userName = 'User'
-			document.getElementById("wel").innerHTML = "!!Welcome "+userName+
-		", Congratulation now you are in our web site lets look at what you can do here¡¡";
-			//fires when hit the facebook button
-			$("#fb").click(function(){
-				window.location = "http://facebook.com";
-			});
+			document.getElementById("wel").innerHTML = "!!Welcome "+ userName +
+		  ", Congratulation, now you are inside of our quiz site lets look at what you can do here¡¡";
 		});
 	</script>
 </head>
 <body>
-
 	<!-- header -->
 	<div class="navbar navbar-inverse navbar-stactic-top">
     <div class="container">
@@ -42,7 +37,7 @@
       </div>
     </div>
   </div>
-  <div class="row">&nbsp;</div>
+  <br>
   <!-- body -->
   <div class="container">
   	<div class="jumbotron">
@@ -64,17 +59,13 @@
 	        <h4 class="modal-title">Js Quiz</h4>
 	      </div>
 	      <div class="modal-body">
-	        <p>
-            Hello, The reason for this quiz is to have a good opportunity to challenge yourself about
+	        <p>Hello, The reason for this quiz is to have a good opportunity to <b>challenge yourself</b> about
             a great and exciting programming language that is Javascript, invented By: Brendan Eich in
             10 days in May 1995.<br>The evolution of Javascript is so high that you can use J.s on the
-            server side, you also can control Robots, open up web sockets for always-on communication,
-            get data on geographical location and device features such as accelerometer, and much more.
-            <br>So believe me, it is a great time to learn Js.
+            server side, you can control Robots also, open up web sockets for always-on communication,
+            get data on geographical location and get device features such as accelerometer, and much more.
+            <br>So believe me, when i say that it is a <b>great</b> time to learn Js.
           </p>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 	      </div>
 	    </div>
 	  </div>
