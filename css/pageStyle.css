@@ -54,6 +54,8 @@ input[type="submit"]{
 .bio {
 	float: left;
   margin: 4%;
+  font-size: 18px;
+  font-family: sans-serif;
 }
 
 .map {
